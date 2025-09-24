@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio</title>
+</head>
+<body>
+    <!-- the video element -->
+    <video src="video/cat.mp4" controls>
+        <p>Your browser doesn't support HTML video. Here is a <a href="video/cat.mp4">link</a> to the video instead.</p>
+    </video>
+
+    <!-- using multiple sources for better compatibility: -->
+    <video controls>
+        <source src="video/cat.mp4" type="video/mp4">
+        <source src="video/cat.webm" type="video/webm">
+        <p>Your browser doesn't support HTML video. Here is a <a href="video/cat.mp4">link</a> to the video instead.</p>
+    </video>
+
+    <!-- other video features: -->
+
+    <video controls width="400" autoplay loop muted preload="auto" poster="video/poster/cat.png">
+        <source src="video/cat.mp4" type="video/mp4">
+        <source src="video/cat.webm" type="video/webm">
+        <p>Your browser doesn't support HTML video. Here is a <a href="video/cat.mp4">link</a> to the video instead.</p>
+    </video>
+
+    <!-- the audio element -->
+    <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        <source src="audio/music.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML audio. Here is a <a href="audio/music.mp3">link</a> to the audio instead.</p>
+    </audio>
+
+    <!-- OVPs (Online Video Providers) -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_MxgzuipNRY?si=C9dvpOE6_lSowQ4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Displaying a video text tracks -->
+    <video controls width="400" autoplay loop muted preload="auto" poster="video/poster/cat.png">
+        <source src="video/cat.mp4" type="video/mp4">
+        <source src="video/cat.webm" type="video/webm">
+        <track src="video/subtitles_en.vtt" kind="subtitles" srclang="en" t>
+        <track src="video/subtitles_bn.vtt" kind="subtitles" srclang="bn">
+        <p>Your browser doesn't support HTML video. Here is a <a href="video/cat.mp4">link</a> to the video instead.</p>
+    </video>
+
+    
+
+</body>
+</html>
